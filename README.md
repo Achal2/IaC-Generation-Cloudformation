@@ -20,6 +20,7 @@ We can now interact with the Amazon Bedrock Agent to generate our infrastructure
 <img width="320" alt="iac agent 5" src="https://github.com/user-attachments/assets/c26c67a8-e0a0-44ea-b210-689e8136d7c4">
 
 We can now go to the given Github link and make sure that the generated CDK is accurate, and comment out the top and bottom line which creates the Cloudformation stack on the AWS console.
+
 This begins deploying the Cloudformation stack and once it is created, it shows the outputs.
 
 <img width="645" alt="iac agent 6" src="https://github.com/user-attachments/assets/f09c9e67-426e-482a-87d3-37bf090d110f">
