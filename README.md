@@ -10,6 +10,15 @@ Architecture Diagram:
 #### Uploaded image to the S3 bucket for IaC Generation(Ex):
 ![vpc-example-private-subnets](https://github.com/user-attachments/assets/94e9fdc6-5d69-4f3e-8d19-35b445a8c64a)
 
+We can now interact with the Amazon Bedrock Agent to generate our infrastructure as code.
+
+<img width="321" alt="iac agent 1" src="https://github.com/user-attachments/assets/0f397129-92c4-438b-a823-b5a1dfc0bc73">
+<img width="330" alt="iac agent 2" src="https://github.com/user-attachments/assets/b967bc70-b7b8-44aa-935c-4a88aafec807">
+<img width="315" alt="iac agent 3" src="https://github.com/user-attachments/assets/ce062be3-8fe5-44d9-846c-2fa01a048f5e">
+<img width="319" alt="iac agent 4" src="https://github.com/user-attachments/assets/dfde0a34-aeab-419d-be8f-0115fffd4886">
+<img width="320" alt="iac agent 5" src="https://github.com/user-attachments/assets/c26c67a8-e0a0-44ea-b210-689e8136d7c4">
+
+
 #### Solution Overview
 - The user utilizes the bedrock agent chat console to input the name of their S3 Bucket and the Object (key) name where the architecture diagram is stored.  
 - After receiving these details, the Bedrock Agent forwards them to an action group that triggers an AWS Lambda function. This function retrieves the architecture diagram from the specified S3 bucket, analyzes it, and produces a summary of the diagram. It also generates questions regarding any missing components, dependencies, or parameter values that are needed to create IaC for AWS services. This detailed response is then sent back to the Bedrock Agent.
