@@ -55,6 +55,4 @@ This README documents two AWS Lambda functions designed for creating IaC from ar
   - Regularly update with new AWS services and modules.
   - Validate JSON structure after updates.
 
-## License
 
-This library is licensed under the MIT-0 License. See the LICENSE file.
