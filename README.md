@@ -3,6 +3,11 @@
 ---
 https://aws.amazon.com/blogs/machine-learning/using-agents-for-amazon-bedrock-to-interactively-generate-infrastructure-as-code/
 
+Architecture Diagram:
+
+<img width="1475" alt="Screenshot 2024-08-28 at 4 24 47 PM" src="https://github.com/user-attachments/assets/8f79ea42-e022-41e7-9a22-fd932331d9d8">
+
+
 #### Solution Overview
 - The user utilizes the bedrock agent chat console to input the name of their S3 Bucket and the Object (key) name where the architecture diagram is stored.  
 - After receiving these details, the Bedrock Agent forwards them to an action group that triggers an AWS Lambda function. This function retrieves the architecture diagram from the specified S3 bucket, analyzes it, and produces a summary of the diagram. It also generates questions regarding any missing components, dependencies, or parameter values that are needed to create IaC for AWS services. This detailed response is then sent back to the Bedrock Agent.
