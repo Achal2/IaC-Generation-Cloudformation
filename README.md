@@ -1,6 +1,7 @@
 ### Using Agents for Amazon Bedrock to Interactively Generate Infrastructure as Code
-https://aws.amazon.com/blogs/machine-learning/using-agents-for-amazon-bedrock-to-interactively-generate-infrastructure-as-code/
+
 ---
+https://aws.amazon.com/blogs/machine-learning/using-agents-for-amazon-bedrock-to-interactively-generate-infrastructure-as-code/
 
 #### Solution Overview
 - The user utilizes the bedrock agent chat console to input the name of their S3 Bucket and the Object (key) name where the architecture diagram is stored.  
