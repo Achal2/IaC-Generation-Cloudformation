@@ -19,6 +19,8 @@ We can now interact with the Amazon Bedrock Agent to generate our infrastructure
 <img width="319" alt="iac agent 4" src="https://github.com/user-attachments/assets/dfde0a34-aeab-419d-be8f-0115fffd4886">
 <img width="320" alt="iac agent 5" src="https://github.com/user-attachments/assets/c26c67a8-e0a0-44ea-b210-689e8136d7c4">
 
+We can now go to the given Github link and make sure that the generated CDK is accurate, and comment out the top and bottom line which creates the Cloudformation stack on the AWS console.
+
 
 #### Solution Overview
 - The user utilizes the bedrock agent chat console to input the name of their S3 Bucket and the Object (key) name where the architecture diagram is stored.  
