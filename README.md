@@ -7,6 +7,8 @@ Architecture Diagram:
 
 <img width="1475" alt="Screenshot 2024-08-28 at 4 24 47 PM" src="https://github.com/user-attachments/assets/8f79ea42-e022-41e7-9a22-fd932331d9d8">
 
+#### Uploaded image to the S3 bucket for IaC Generation:
+![vpc-example-private-subnets](https://github.com/user-attachments/assets/94e9fdc6-5d69-4f3e-8d19-35b445a8c64a)
 
 #### Solution Overview
 - The user utilizes the bedrock agent chat console to input the name of their S3 Bucket and the Object (key) name where the architecture diagram is stored.  
