@@ -1,9 +1,6 @@
 ### Using Agents for Amazon Bedrock to Interactively Generate Infrastructure as Code
-
+https://aws.amazon.com/blogs/machine-learning/using-agents-for-amazon-bedrock-to-interactively-generate-infrastructure-as-code/
 ---
-
-#### Overview
-This README documents two AWS Lambda functions designed for creating IaC from architecture diagrams along with a Knowledge Base (KB). This solution follows AWS security reference architecture(https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/architecture.html), and can be utilized to create customized, compliant, Terraform and CloudFormation code. 
 
 #### Solution Overview
 - The user utilizes the bedrock agent chat console to input the name of their S3 Bucket and the Object (key) name where the architecture diagram is stored.  
@@ -20,13 +17,7 @@ This README documents two AWS Lambda functions designed for creating IaC from ar
   3. Analyses the diagram.
   4. Creates a summary of the services present in diagram and also questions regarding missing components/dependencies.
   5. Returns the information back to Bedrock agent.
-
-#### IaC Generation and Deployment Lambda (Triggered by action groups)
-- **Description**: Generates and commits Terraform configurations for AWS services to a GitHub repository.
-- **Environment Variables**:
-  - `GITHUB_TOKEN`: Token for GitHub API authentication.
-  - `KNOWLEDGE_BASE_ID`: ID of created Knowledge base
-- **Dependencies**: Python 3.x, `boto3`, `requests`, `logging`, `base64` libraries.
+ 
 - **Logical Flow**:
   1. Receives an event with S3 bucket, Object name, Final approved changes.
   2. Fetch diagram from S3.
@@ -46,13 +37,5 @@ This README documents two AWS Lambda functions designed for creating IaC from ar
   5. Choose the Default Embeddings Model: For most use cases, the Amazon Bedrock Titan G1 Embeddings - Text model will suffice. It's pre-configured and ready to use, simplifying the process.
   6. Opt for the Managed Vector Store: Allow Amazon Bedrock to create and manage the vector store for you in Amazon OpenSearch Service.
   7. Review and Finalize: Double-check all entered information for accuracy. Pay special attention to the S3 bucket URI and IAM role details.
-
-#### Updating and Maintenance
-- **Lambda Functions**:
-  - Regularly update dependencies and environment variables.
-  - Monitor Lambda logs for troubleshooting.
-- **Knowledge Base**:
-  - Regularly update with new AWS services and modules.
-  - Validate JSON structure after updates.
 
 
