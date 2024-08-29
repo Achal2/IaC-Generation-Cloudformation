@@ -9,6 +9,7 @@ Architecture Diagram:
 
 #### Uploaded image to the S3 bucket for IaC Generation(Ex):
 The S3 bucket is named: architecture-diagram-bucket-1 and the object is named: vpc-example-private-subnets.png
+
 ![vpc-example-private-subnets](https://github.com/user-attachments/assets/94e9fdc6-5d69-4f3e-8d19-35b445a8c64a)
 
 We can now interact with the Amazon Bedrock Agent to generate our infrastructure as code.
@@ -19,9 +20,11 @@ We can now interact with the Amazon Bedrock Agent to generate our infrastructure
 <img width="319" alt="iac agent 4" src="https://github.com/user-attachments/assets/dfde0a34-aeab-419d-be8f-0115fffd4886">
 <img width="320" alt="iac agent 5" src="https://github.com/user-attachments/assets/c26c67a8-e0a0-44ea-b210-689e8136d7c4">
 
-We can now go to the given Github link and make sure that the generated CDK is accurate, and comment out the top and bottom line which creates the Cloudformation stack on the AWS console.
+We can now go to the given Github link and make sure that the generated Cloud formation code is accurate, and comment out the top and bottom line which creates the Cloudformation stack on the AWS console.
 
 This begins deploying the Cloudformation stack and once it is created, it shows the outputs.
+
+The actual generated code can be found in the main.yaml file located in the Cloudformation folder.
 
 <img width="645" alt="iac agent 6" src="https://github.com/user-attachments/assets/f09c9e67-426e-482a-87d3-37bf090d110f">
 <img width="646" alt="iac agent 7" src="https://github.com/user-attachments/assets/59249bff-0dfd-45d3-bec7-04a8440c94b5">
