@@ -46,14 +46,7 @@ The actual generated code can be found in the main.yaml file located in the Clou
   3. Analyses the diagram.
   4. Creates a summary of the services present in diagram and also questions regarding missing components/dependencies.
   5. Returns the information back to Bedrock agent.
- 
-- **Logical Flow**:
-  1. Receives an event with S3 bucket, Object name, Final approved changes.
-  2. Fetch diagram from S3.
-  3. Analyses the diagram.
-  4. Retrieves modules from provided Knowledge base.
-  5. Creates IaC and publishes it to GitHub respository.
-  6. Returns success message with GitHub URLs or error information.
+
 
 #### Knowledge Base (KB)
 - **Description**: A structured repository containing AWS service and Terraform module information.
